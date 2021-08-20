@@ -1,4 +1,7 @@
-const deleteNote = () => {
+const path = require('path');
+
+const deleteNote = id => {
+console.log(id)
 
 }
 
