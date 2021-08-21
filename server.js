@@ -1,6 +1,7 @@
 const express = require('express');
 
 const api = require('./routes/api');
+const homepage = require('./routes/index');
 
 const PORT = process.env.port || 3001;
 
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', api);
+app.use(homepage)
 
 
 app.listen(PORT, () =>
