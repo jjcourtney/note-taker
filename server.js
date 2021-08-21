@@ -10,13 +10,18 @@ const PORT = process.env.port || 3001;
 
 const app = express();
 
+// Middleware being parsed
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.get("/api/notes", getNote);
 
 app.post("/api/notes", saveNote);
 
 app.delete("/api/notes/:id", (req, res) => {
     
-    deleteNote(req.params.id)
+    deleteNote(req.params.id);
+    res.json("Deleted", req.params.id)
 });
 
 
