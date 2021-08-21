@@ -12,6 +12,6 @@ api.delete("/notes/:id", (req, res) => {
     res.json("Deleted", req.params.id)
 });
 
-api.get("/api/notes", getNote);
+api.get("/notes", getNote);
 
 module.exports = api;
