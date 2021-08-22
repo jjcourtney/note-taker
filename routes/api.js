@@ -9,7 +9,7 @@ api.post("/notes", saveNote);
 api.delete("/notes/:id", (req, res) => {
     
     deleteNote(req.params.id);
-    res.json("Deleted", req.params.id)
+    res.json(`Deleted ${req.params.id}`)
 });
 
 api.get("/notes", getNote);
