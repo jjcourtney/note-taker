@@ -1,11 +1,14 @@
 
 const fs = require('fs');
+const { uuid } = require('uuidv4');
+
 const { addNoteToJson } = require('./fsUtils')
 
 
 
 const saveNote = (req, res) => {
     const noteContent = req.body;
+    noteContent.id = uuid();
     const file = "./db/db.json";
 
     fs.readFile(file, 'utf8', (err, data) => {
