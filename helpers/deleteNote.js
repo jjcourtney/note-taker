@@ -1,4 +1,3 @@
-
 const { readFromJson, addNoteToJson } = require('./fsUtils')
 
 const deleteNote = id => {
@@ -10,11 +9,8 @@ const deleteNote = id => {
       
       const result = json.filter((note) => note.id !== id);
 
-
       addNoteToJson(file, result);
 
-
-      return `Notes with the id ${id} have been deleted 🗑️`;
     });
 
 }
