@@ -7,6 +7,10 @@ This allows you to add, delete and view notes. It uses an express server and api
 Deployed at: \
 https://gentle-meadow-26894.herokuapp.com/
 
+Repo on github at: \
+https://github.com/jjcourtney/note-taker
+
+
 ## Table of contents
 
 - [Installation](#installation)
