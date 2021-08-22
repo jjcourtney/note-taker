@@ -15,8 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', api);
 
-
-
 app.get('/notes', (req, res) =>{
   console.log("/notes hit")
   res.sendFile(path.join(__dirname, '/public/notes.html'))
@@ -25,9 +23,6 @@ app.get('/notes', (req, res) =>{
 app.get('/', (req, res) =>{
   res.sendFile(path.join(__dirname, '/public/index.html'))
 });
-
-
-
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
