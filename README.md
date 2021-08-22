@@ -20,7 +20,7 @@ https://gentle-meadow-26894.herokuapp.com/
 To start the server run ```node server.js```
 
 ## Usage
-Head to the root file on your browser
+Open the root file on your browser.
 
 ## License 
 This is covered under The MIT License: 
