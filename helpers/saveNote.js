@@ -1,11 +1,8 @@
 
 const fs = require('fs');
+const { addNoteToJson } = require('./fsUtils')
 
 
-const addNoteToJson = (file, noteContent) =>
-  fs.writeFile(file, JSON.stringify(noteContent, null, 4), (err) =>
-    err ? console.error(err) : console.info(`\nData written to ${file}`)
-  );
 
 const saveNote = (req, res) => {
     const noteContent = req.body;
