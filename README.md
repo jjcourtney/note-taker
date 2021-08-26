@@ -5,7 +5,7 @@
 This allows you to add, delete and view notes. It uses an express server and api requests to persist the data, saving in a JSON file.
 
 Deployed at: \
-https://gentle-meadow-26894.herokuapp.com/
+https://jjcourtney-note-taker.herokuapp.com/
 
 Repo on github at: \
 https://github.com/jjcourtney/note-taker
